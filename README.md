@@ -22,4 +22,7 @@ Where <|endoftext|> is the special token of gpt-2 tokenizer. You can also print 
 ほかのデータでも上記の形に処理しておけば学習データとして扱える。コード内にデータをプリントすればわかるはず。
 
 ### environment
+TBW
+### run the code
 
+### changing hyperparameters
