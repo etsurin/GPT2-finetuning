@@ -41,6 +41,7 @@ pip install -r requirements.txt
 上記のコマンドを実行してください。
 
 ### run the code with multiple hyperparameters
+-
 run the following command if you want to run in default hyperparameter settings
 ```
 python dial_main.py
@@ -56,6 +57,7 @@ python dial_main.py --initial_point <model name> --schedule <optimizer schedule>
 
 ハイパーパラメータを変えたい場合は、上記のいずれかを元のコマンドに付けてください。
 
+-
 accumulate step is an alternation to multi batch size in limited gpu memory. The actual batch size is acc_step * train_bz. 
 
 for generation hyperparameters, please refer to https://huggingface.co/blog/how-to-generate
@@ -63,14 +65,16 @@ for generation hyperparameters, please refer to https://huggingface.co/blog/how-
 勾配累積および生成に関するハイパーパラメータの説明です。
 
 ### chat with your pretrained model
+-
 after training model, you can play with it by running the following command (in default settings)
 
-訓練したモデルを試したい場合は、以下のコマンドを実行してください。
+訓練したモデルを遊びたい場合は、以下のコマンドを実行してください。
 
 ```
 python dial_main.py --play
 ```
 
+-
 you can change hyperparameters by adding some of the followings to the original command
 ```
 python dial_main.py --play --ptr_model_path <the path of your trained model> --chat_turns <maximum chat turns when running the model> \
@@ -86,10 +90,11 @@ I ran the code on a gpu with 24GB memory.
 
 for training small models e.g. microsoft/dialogpt-small, the training can be finished in several minutes. 
 
-for training large models e.g. microsoft/dialogpt-large, you should restrict the train_bz to 1 and change acc_step for mini-batch training, the training  
-can be finished in 2 hours. Of course there is also microsoft/dialogpt-medium. 
+for training large models e.g. microsoft/dialogpt-large, you should restrict the train_bz to 1 and change acc_step for mini-batch training, the training can be finished in 2 hours. 
 
-24GBのGPUで十分です。ただし、大サイズのモデルをファインチューニングする場合はtrain_bzを変えないでください。 
+Of course there is also microsoft/dialogpt-medium. 
+
+24GBのGPUで十分です。ただし、大サイズのモデルをファインチューニングする場合はtrain_bz = 1に限られています。バッチサイズを大きくしたい場合は勾配累積利用してください。 
 
 小サイズのモデルは数分、大サイズでも2時間くらい完成できます。
 
