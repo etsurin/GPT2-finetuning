@@ -55,7 +55,7 @@ python dial_main.py --initial_point <model name> --schedule <optimizer schedule>
 --top_k <parameter of top_k sampling method> --top_p <parameter of top_k sampling method> --temp <generating temperature> 
 ```
 
-ハイパーパラメータを変えたい場合は、上記のいずれかを元のコマンドに付けてください。
+ハイパーパラメータを変えたい場合は、上記ようにのいずれかを元のコマンドに付けてください。
 
 -
 accumulate step is an alternation to multi batch size in limited gpu memory. The actual batch size is acc_step * train_bz. 
@@ -82,7 +82,7 @@ python dial_main.py --play --ptr_model_path <the path of your trained model> --c
 --top_k <parameter of top_k sampling method> --top_p <parameter of top_k sampling method> --temp <generating temperature> 
 ```
 
-ハイパーパラメータを変えたい場合は、上記のいずれかを元のコマンドに付けてください。
+ハイパーパラメータを変えたい場合は、上記ようにのいずれかを元のコマンドに付けてください。
 
 ### gpu requirements and time cost
 
