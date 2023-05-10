@@ -1,6 +1,8 @@
 # wolf_chatbox
 
 ## part1: finetune a dialogpt
+First, it's essential to know how to finetune a dialogue model using own data. 
+まず、言語モデルのファインチューニングのしかたを知ること。
 
 ### preparing training data
 
