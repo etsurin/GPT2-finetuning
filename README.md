@@ -28,7 +28,7 @@ Where <|endoftext|> is the special token of gpt-2 tokenizer. You can also print 
 -
 The default setting is that downloaded csv data and code files are in the same folder. 
 
-csvファイルとコードを同じフォルダにあることを確認してください。
+csvファイルとコードが同じフォルダにあることを確認してください。
 
 ### environment
 TBW
