@@ -1,6 +1,7 @@
 # wolf_chatbox
 
 ## part1: finetune a dialogpt
+
 ### training data
 I used scripts of Rick and Morty for the learning data. The flow of finetuning is referred to https://colab.research.google.com/drive/15wa925dj7jvdvrz8_z3vU7btqAFQLVlG, thanks to the authors!
 
@@ -21,9 +22,13 @@ Where <|endoftext|> is the special token of gpt-2 tokenizer. You can also print 
 
 ほかのデータでも上記の形に処理しておけば学習データとして扱える。コード内にサンプルをプリントして覗いてみればわかるはず。
 
+The default setting is that downloaded csv data and code files are in the same folder. 
+
+csvファイルとコードを同じフォルダに置いてください。
+
 ### environment
-
+TBW
 ### run the code with multiple hyperparameters
-
+TBW
 ## part2: get the were-wolf data
 TBW
