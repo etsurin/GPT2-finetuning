@@ -24,7 +24,7 @@ for each sample with m turns should be a str format that has the following forma
 [turn_1]<|endoftext|>[turn_2]<|endoftext|>...[turn_m]<|endoftext|>
 ```
 
-Where <|endoftext|> is the special token of gpt-2 tokenizer. You can also print a sample of raw_data and then you should know how to process your own data. 
+Where <|endoftext|> is the special token of gpt-2 tokenizer. You can also print a sample of raw_data in the code and then you should know how to process your own data. 
 
 ほかのデータでも上記の形に処理しておけば学習データとして扱える。コード内にサンプルをプリントして見ればわかるはず。
 
