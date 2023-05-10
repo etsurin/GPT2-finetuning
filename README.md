@@ -56,10 +56,12 @@ python dial_main.py --initial_point <model name> --schedule <optimizer schedule>
 ```
 
 ハイパーパラメータを変えたい場合は、上記ようにいずれかを元のコマンドに付けてください。
+
 -
-gpt2 series and dialogpt series are available
+gpt2 series and dialogpt series (infact they are inherited from gpt2 series) are available
 
 gpt2系とdialogpt系はこのコードでファインチューニングできます。
+
 -
 accumulate step is an alternation to multi batch size in limited gpu memory. The actual batch size is acc_step * train_bz. 
 
