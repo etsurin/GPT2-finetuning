@@ -12,7 +12,7 @@ raw_data is a list consisting of dialogue samples
 ```
 [<sample_1>,<sample_2>,...<sample_n>]
 ```
-for each sample with m turns should be a str format that has the following:
+for each sample with m turns should be a str format that has the following format:
 ```
 [turn_1]<|endoftext|>[turn_2]<|endoftext|>...[turn_m]<|endoftext|>
 ```
