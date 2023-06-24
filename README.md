@@ -1,4 +1,3 @@
-# wolf_chatbox
 
 ## part1: finetune a dialogpt
 First, it's essential to know how to finetune a dialogue model using own data. 
@@ -105,5 +104,3 @@ Of course there is also microsoft/dialogpt-medium.
 
 中サイズもひとつの選択です。
 
-## part2: get the were-wolf data
-TBW
